@@ -1,5 +1,5 @@
 function findShortestWords(str) {
-var words=	str.replace(/[.;,?%]/, "");
+var words=str.replace(/[.;,?%]/, "");
   var strLength=[];
 	var strResult=[];
 	var res= words.split(" ");
