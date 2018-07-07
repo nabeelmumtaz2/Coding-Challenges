@@ -1,11 +1,11 @@
-Break camelCase
+//Break camelCase
 
 function solution(string) {
   
   return string.split(/(?=[A-Z])/).join(' '); 
 }
 
-Array.diff
+//Array.diff
 
 function array_diff(a, b) {
 let result=[];
@@ -17,7 +17,7 @@ for(let i=0;i<a.length;i++){
   return result;
 }
 
-Digits explosion
+//Digits explosion
 
 
 function explode(s) {
@@ -30,10 +30,9 @@ for(var i=0;i<arry.length;i++){
   return result;
 }
 
-Kebabize
+//Kebabize
 
 function kebabize(str) {
-  // return
   let result="";
   let words=str.split(/(?=[A-Z])/);
   for(let i=0;i<words.length;i++){
@@ -45,10 +44,9 @@ function kebabize(str) {
   return result;
 }
 
-Find The Parity Outlier
+//Find The Parity Outlier
 
 function findOutlier(integers){
-  //your code here
   let odd=[];
   let even=[];
   
@@ -66,10 +64,9 @@ function findOutlier(integers){
   }
 }
 
-IQ Test
+//IQ Test
 
 function iqTest(numbers){
-  // ...
   var num=numbers.split(" ");
   var odd=[];
   var even=[];
@@ -85,14 +82,14 @@ function iqTest(numbers){
    if(odd.length==1){
    
    return odd[0]+1;
-   
+	   
    }else{
-   
+	   
    return even[0]+1;
    }
 }
 
-Sum of Digits / Digital Root
+//Sum of Digits / Digital Root
 
 function digital_root(n) {
   
@@ -106,13 +103,13 @@ function digital_root(n) {
    for(let i=0;i<result1.length;i++){
    result=result + parseInt(result1[i]);
    
-   }
-  }
+     }
+    }
   }
   return result;
 }
 
-Correct the mistakes of the character recognition software
+//Correct the mistakes of the character recognition software
 
 function correct(string)
 {
@@ -121,20 +118,19 @@ function correct(string)
   return newstr;
 }
 
-Remove the minimum
+//Remove the minimum
 
 function removeSmallest(numbers) {
   
- var minItem= Math.min.apply(null, numbers);
- var minIndex = numbers.indexOf(Math.min(...numbers));
+  var minItem= Math.min.apply(null, numbers);
+  var minIndex = numbers.indexOf(Math.min(...numbers));
   return numbers.filter((e,index) => {return e != minItem || index != minIndex});
 
 }
 
-Sort array by string length
+//Sort array by string length
 
 function sortByLength (array) {
-  // Return an array containing the same strings, ordered from shortest to longest
 let arrayLength=[];
 let result=[];
 for(var i=0;i < array.length;i++){
@@ -147,15 +143,14 @@ for(var r=0;r < array.length;r++){
   if(arrayLength[i]==array[r].length){
   result.push(array[r]);
   }
-}
+ }
 }
 return result;
 };
 
-Make a function that does arithmetic!
+//Make a function that does arithmetic!
 
 function arithmetic(a, b, operator){
-  //your code here!
   var result;
   switch(operator) {
     case "add":
@@ -174,14 +169,14 @@ function arithmetic(a, b, operator){
    return result;
 }
 
-Round to the next multiple of 5.
+//Round to the next multiple of 5.
 
 function roundToNext5(n){
-  // ...
+	
   return Math.ceil( n/5) *5;
 }
 
-Shortest Word
+//Shortest Word
 
 function findShort($str){
 
@@ -193,40 +188,34 @@ $lengths = array_map('strlen', $res);
 }
 
 function findShort(s){
-
 var words = s.split(" ");
 var lng=[];
 for(var i=0;i < words.length;i++){
-    
     lng.push(words[i].length);
-    
   }
   return Math.min(...lng);
 }                                                                
 
-BetaThinkful - String Drills: Hello, World
+//BetaThinkful - String Drills: Hello, World
 
 function hello(name) {
-  // Insert your code below.
   return 'Hello, '+ name;
 }
-3 weeks agoRefactorDiscuss
-BetaSwapping values (Revamped!)
-JavaScript:
+
+
 function swap(a,b){
 
   return [b,a]
 }
 
-Who am I?
+//Who am I?
 
 function checkType(value) {  
   return typeof value;
 }
-3 weeks agoRefactorDiscuss
-6 kyu
-Create Phone Number
-JavaScript:
+
+//Create Phone Number
+
 function createPhoneNumber(numbers){
   
   let partOne=numbers.slice(0, 3).join("");
@@ -236,23 +225,20 @@ function createPhoneNumber(numbers){
   return  result;
 }
 
-Remove String Spaces
-
+//Remove String Spaces
 
 function no_space(string $s): string {
-  // Your code here
   return  str_replace(" ","",$s);
 }
 
-String repeat
-
+//String repeat
 
 function repeatStr($n, $str)
 {
   return str_repeat($str,$n);
 }
 
-Multiply
+//Multiply
 
 public class CustomMath {
     public static int multiply(int a, int b) {
