@@ -1,5 +1,5 @@
 //Create a function that takes a value as an argument and return the type of this value. 
-You should get the real type of a value (javascript typeof doesn't return the real object type of values and you need to fix that).
+//You should get the real type of a value (javascript typeof doesn't return the real object type of values and you need to fix that).
 
 
 function realType(value){
